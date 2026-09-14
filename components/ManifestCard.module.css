@@ -1,0 +1,513 @@
+/* =========================================================
+   MANIFEST CARD — VÍVERA
+   Compact Design
+   ========================================================= */
+
+.manifestSection {
+
+  --manifest-paper: #E5DEDA;
+  --manifest-gold: #A67C42;
+  --manifest-ink: #171717;
+
+  position: relative;
+
+  width: 100%;
+
+  min-height: 900px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  /*
+   * Плавное продолжение предыдущего блока:
+   *
+   * #F9F5F1
+   *      ↓
+   * #FEFEFE
+   *      ↓
+   * #F1E5DE
+   */
+
+background:
+  linear-gradient(
+    180deg,
+    #F3ECE7 0%,
+    #F3ECE7 2%,
+    #e5deda 50%,
+    #e5deda 50%,
+    #F1E5DE 98%,
+    #F1E5DE 100%
+  );
+
+  color: var(--manifest-ink);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.container {
+
+  position: relative;
+
+  z-index: 2;
+
+  width:
+    min(
+      1120px,
+      calc(100% - 120px)
+    );
+
+  margin: 60px auto;
+}
+
+
+/* =========================================================
+   DOCUMENT AREA
+   ========================================================= */
+
+.documentArea {
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   DOCUMENT
+   ========================================================= */
+
+.document {
+
+  position: relative;
+
+  width:
+    min(
+      760px,
+      100%
+    );
+
+  border-radius: 20px;
+
+  background:
+    var(--manifest-paper);
+
+  box-shadow:
+    0 24px 60px
+    rgba(65, 48, 35, 0.11),
+
+    0 6px 20px
+    rgba(65, 48, 35, 0.045);
+
+  overflow: hidden;
+
+  transition:
+    height 0.7s cubic-bezier(
+      0.22,
+      1,
+      0.36,
+      1
+    ),
+
+    box-shadow 0.4s ease;
+}
+
+
+/* =========================================================
+   CLOSED / OPEN STATES
+   ========================================================= */
+
+.documentClosed {
+
+  height: 560px;
+}
+
+
+.documentOpen {
+
+  height: auto;
+
+  overflow: visible;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.manifestImage {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   SOFT DISSOLVE
+   ========================================================= */
+
+.fade {
+
+  position: absolute;
+
+  z-index: 3;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 190px;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to bottom,
+
+      rgba(229, 222, 218, 0) 0%,
+
+      rgba(229, 222, 218, 0.04) 12%,
+
+      rgba(229, 222, 218, 0.18) 30%,
+
+      rgba(229, 222, 218, 0.46) 52%,
+
+      rgba(229, 222, 218, 0.72) 72%,
+
+      rgba(229, 222, 218, 0.93) 90%,
+
+      rgba(229, 222, 218, 1) 100%
+    );
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.button {
+
+  position: relative;
+
+  z-index: 5;
+
+  margin-top: 28px;
+
+  width: 360px;
+
+  height: 54px;
+
+  padding: 0 24px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid
+    rgba(166, 124, 66, 0.62);
+
+  border-radius: 27px;
+
+  background:
+    rgba(255, 252, 247, 0.32);
+
+  box-shadow:
+    0 7px 20px
+    rgba(80, 60, 40, 0.045);
+
+  backdrop-filter: blur(6px);
+
+  -webkit-backdrop-filter: blur(6px);
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+
+  color: var(--manifest-gold);
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* =========================================================
+   BUTTON — HOVER
+   ========================================================= */
+
+.button:hover {
+
+  background:
+    rgba(255, 252, 247, 0.55);
+
+  border-color:
+    rgba(166, 124, 66, 0.82);
+
+  box-shadow:
+    0 9px 24px
+    rgba(80, 60, 40, 0.07);
+
+  transform:
+    translateY(-1px);
+}
+
+
+/* =========================================================
+   BUTTON — ACTIVE
+   ========================================================= */
+
+.button:active {
+
+  transform:
+    translateY(0);
+}
+
+
+/* =========================================================
+   BUTTON — FOCUS
+   ========================================================= */
+
+.button:focus-visible {
+
+  outline:
+    1px solid
+    rgba(166, 124, 66, 0.95);
+
+  outline-offset: 5px;
+}
+
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.arrow {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  font-weight: 300;
+
+  color: var(--manifest-gold);
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.button:hover .arrow {
+
+  transform:
+    translateX(4px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .manifestSection {
+
+    min-height: 820px;
+
+    padding:
+      70px
+      0
+      90px;
+  }
+
+
+  .container {
+
+    width:
+      calc(100% - 80px);
+  }
+
+
+  .document {
+
+    width:
+      min(
+        680px,
+        100%
+      );
+
+    border-radius: 18px;
+  }
+
+
+  .documentClosed {
+
+    height: 500px;
+  }
+
+
+  .fade {
+
+    height: 175px;
+  }
+
+
+  .button {
+
+    width: 340px;
+
+    height: 52px;
+
+    margin-top: 26px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .manifestSection {
+
+    min-height: 700px;
+
+    padding:
+      52px
+      0
+      70px;
+
+    background:
+      linear-gradient(
+        180deg,
+        #F9F5F1 0%,
+        #FEFEFE 18%,
+        #FEFEFE 64%,
+        #F1E5DE 100%
+      );
+  }
+
+
+  .container {
+
+    width:
+      calc(100% - 32px);
+  }
+
+
+  .document {
+
+    width: 100%;
+
+    border-radius: 16px;
+  }
+
+
+  .documentClosed {
+
+    height: 370px;
+  }
+
+
+  .fade {
+
+    height: 145px;
+  }
+
+
+  .button {
+
+    width: 280px;
+
+    height: 50px;
+
+    margin-top: 23px;
+
+    padding:
+      0 20px;
+
+    gap: 17px;
+
+    border-radius: 25px;
+
+    font-size: 10px;
+
+    letter-spacing: 0.12em;
+  }
+
+
+  .arrow {
+
+    font-size: 20px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .container {
+
+    width:
+      calc(100% - 24px);
+  }
+
+
+  .documentClosed {
+
+    height: 350px;
+  }
+
+
+  .button {
+
+    width: 260px;
+
+    height: 48px;
+
+    font-size: 9.5px;
+  }
+}

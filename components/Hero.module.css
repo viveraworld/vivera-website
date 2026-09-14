@@ -1,0 +1,603 @@
+/* =====================================================
+   VÍVERA — HERO
+   ===================================================== */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+  height: 100svh;
+  min-height: 620px;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  background: #EBE4E2;
+}
+
+
+/* =====================================================
+   WATERMARK
+   ===================================================== */
+
+.watermark {
+  position: absolute;
+
+  z-index: 1;
+
+  right: -6vw;
+  bottom: 0;
+
+  width: min(46vw, 680px);
+  height: 100%;
+
+  background: #D2CBC6;
+
+  -webkit-mask-image: url("/images/brand/vivera-watermark.png");
+  mask-image: url("/images/brand/vivera-watermark.png");
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center bottom;
+  mask-position: center bottom;
+
+  -webkit-mask-size: 118% auto;
+  mask-size: 118% auto;
+
+  opacity: 0.42;
+
+  filter:
+    blur(0.35px)
+    drop-shadow(0 0 2px #171717);
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   HERO CONTENT
+   ===================================================== */
+
+.content {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(560px, 44vw);
+
+  margin-left: 8vw;
+
+  padding-top: clamp(165px, 22vh, 220px);
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MAIN LOGO
+   ===================================================== */
+
+.brand {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  object-fit: contain;
+  object-position: left center;
+}
+
+
+/* =====================================================
+   TITLE GROUP
+   ===================================================== */
+
+.titleGroup {
+  display: inline-flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  width: max-content;
+
+  max-width: 100%;
+
+  margin: 15px 0 0 20px;
+}
+
+
+/* =====================================================
+   TITLE
+   ===================================================== */
+
+.title {
+  display: block;
+
+  width: max-content;
+
+  max-width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", Arial, sans-serif;
+
+  font-size: 21px;
+  line-height: 1.35;
+
+  font-weight: 500;
+
+  letter-spacing: 0.25em;
+
+  color: #171717;
+
+  white-space: nowrap;
+
+  transform: scaleX(1.02);
+
+  transform-origin: left center;
+}
+
+
+/* =====================================================
+   GOLD HORIZONTAL LINE
+   ===================================================== */
+
+.line {
+  position: relative;
+
+  width: 100%;
+  height: 12px;
+
+  margin-top: 24px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: visible;
+}
+
+
+/* =====================================================
+   GOLD LINE FILL
+   ===================================================== */
+
+.lineFill {
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 100%;
+  height: 1px;
+
+  transform: translateY(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      #8A642E 0%,
+      #E5C27A 30%,
+      #FFF0BD 50%,
+      #B78335 72%,
+      #8A642E 100%
+    );
+
+  box-shadow:
+    0 0 2px rgba(255, 239, 185, 0.45);
+
+  z-index: 1;
+}
+
+
+/* =====================================================
+   SPHERE ON HORIZONTAL LINE
+   ===================================================== */
+
+.lineSphere {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  display: block;
+
+  transform: translate(-50%, -50%);
+
+  overflow: visible;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   SUBTITLE
+   ===================================================== */
+
+.subtitle {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: 24px 0 0 20px;
+  padding: 0;
+
+  font-family: "Tilda Sans", Arial, sans-serif;
+
+  font-size: clamp(14px, 1.1vw, 16px);
+
+  line-height: 1.6;
+
+  font-weight: 400;
+
+  letter-spacing: 0.12em;
+
+  color: #202020;
+}
+
+
+.subtitle span {
+  display: block;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+   ===================================================== */
+
+.description {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  width: 360px;
+  max-width: 100%;
+
+  margin-top: 36px;
+  margin-left: 20px;
+
+  padding-left: 26px;
+
+  box-sizing: border-box;
+
+  font-family: "Tilda Sans", Arial, sans-serif;
+
+  font-size: clamp(12px, 0.95vw, 14px);
+
+  line-height: 1.75;
+
+  font-weight: 400;
+
+  letter-spacing: 0.055em;
+
+  color: #222222;
+}
+
+
+/* =====================================================
+   METALLIC VERTICAL THREAD
+   ===================================================== */
+
+.descriptionThread {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 1px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #8A5F24 0%,
+      #D8AE62 18%,
+      #FFF0BD 34%,
+      #A9742B 50%,
+      #F2D18A 66%,
+      #FFF3C6 82%,
+      #8A5F24 100%
+    );
+
+  box-shadow:
+    0 0 1px rgba(255, 239, 185, 0.95),
+    0 0 3px rgba(184, 135, 57, 0.28);
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   SPHERE ON VERTICAL LINE
+   ===================================================== */
+
+.descriptionSphere {
+  position: absolute;
+
+  left: -6px;
+  top: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  display: block;
+
+  transform: translateY(-50%);
+
+  overflow: visible;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   AUDIENCE
+   ===================================================== */
+
+.audience {
+  margin-top: 30px;
+  margin-left: 20px;
+
+  font-family: "Tilda Sans", Arial, sans-serif;
+
+  font-size: clamp(19px, 1.7vw, 26px);
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: 0.15em;
+
+  color: #A67C42;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+  .hero {
+    height: 100svh;
+    min-height: 600px;
+  }
+
+  .content {
+    width: min(520px, 58vw);
+
+    margin-left: 7vw;
+
+    padding-top: clamp(150px, 21vh, 205px);
+  }
+
+  .watermark {
+    right: -7vw;
+
+    width: 50vw;
+  }
+
+  .description {
+    width: 350px;
+  }
+}
+
+
+/* =====================================================
+   SHORT DESKTOP
+   ===================================================== */
+
+@media (min-width: 769px) and (max-height: 800px) {
+
+  .hero {
+    height: 100svh;
+    min-height: 580px;
+  }
+
+  .content {
+    padding-top: 150px;
+  }
+
+  .description {
+    margin-top: 30px;
+  }
+
+  .audience {
+    margin-top: 26px;
+  }
+
+  .watermark {
+    width: min(44vw, 630px);
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 100svh;
+    min-height: 0;
+  }
+
+  .content {
+    width: auto;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    padding-top: 118px;
+  }
+
+  .brand {
+    width: min(100%, 400px);
+  }
+
+  .titleGroup {
+    margin-top: 11px;
+    margin-left: 18px;
+
+    max-width: calc(100% - 18px);
+  }
+
+  .title {
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    letter-spacing: 0.105em;
+  }
+
+  .line {
+    margin-top: 22px;
+  }
+
+  .subtitle {
+    margin-top: 23px;
+    margin-left: 18px;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.07em;
+  }
+
+  .description {
+    width: 100%;
+
+    margin-top: 34px;
+    margin-left: 18px;
+
+    padding-left: 18px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    letter-spacing: 0.045em;
+  }
+
+  .descriptionThread {
+    left: 0;
+  }
+
+  .descriptionSphere {
+    left: -6px;
+  }
+
+  .audience {
+    margin-top: 27px;
+    margin-left: 18px;
+
+    font-size: 19px;
+
+    letter-spacing: 0.13em;
+  }
+
+  .watermark {
+    right: -30%;
+
+    bottom: 0;
+
+    width: 76%;
+    height: 100%;
+
+    -webkit-mask-position: center bottom;
+    mask-position: center bottom;
+
+    -webkit-mask-size: 100% auto;
+    mask-size: 100% auto;
+
+    opacity: 0.30;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 420px) {
+
+  .content {
+    margin-left: 18px;
+    margin-right: 18px;
+
+    padding-top: 105px;
+  }
+
+  .brand {
+    width: min(100%, 370px);
+  }
+
+  .titleGroup {
+    margin-left: 16px;
+
+    max-width: calc(100% - 16px);
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .subtitle {
+    margin-left: 16px;
+
+    font-size: 12px;
+  }
+
+  .description {
+    margin-left: 16px;
+    margin-top: 30px;
+
+    padding-left: 17px;
+
+    font-size: 11.5px;
+  }
+
+  .audience {
+    margin-left: 16px;
+    margin-top: 24px;
+
+    font-size: 18px;
+  }
+
+  .watermark {
+    right: -34%;
+    width: 80%;
+  }
+}

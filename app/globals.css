@@ -1,0 +1,155 @@
+/* =========================================================
+   VÍVERA — GLOBAL STYLES
+   Только глобальная база.
+   Стили компонентов находятся в *.module.css
+   ========================================================= */
+
+
+/* =========================================================
+   FONT
+   ========================================================= */
+
+@font-face {
+  font-family: "Tilda Sans";
+  src: url("/fonts/TildaSans-VF.woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* =========================================================
+   VÍVERA — DESIGN TOKENS
+   ========================================================= */
+
+:root {
+  /* Typography */
+  --vivera-font:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  /* Backgrounds */
+  --vivera-bg-hero: #f3efeb;
+  --vivera-bg-manifesto: #ebe5e0;
+  --vivera-bg-soft: #e7dfda;
+  --vivera-paper: #fdfcf9;
+  --vivera-porcelain: #fbfaf8;
+
+  /* Text */
+  --vivera-black: #1d1d1f;
+  --vivera-gray: #625d5a;
+  --vivera-gold-text: #a37a41;
+
+  /* Gold metal */
+  --vivera-gold-dark: #79521f;
+  --vivera-gold-deep: #91662b;
+  --vivera-gold: #b88a43;
+  --vivera-gold-light: #e6c47e;
+  --vivera-gold-highlight: #fff4c9;
+
+  /* Silver metal */
+  --vivera-silver-dark: #858582;
+  --vivera-silver: #bdbdb8;
+  --vivera-silver-light: #e7e6e2;
+  --vivera-silver-highlight: #ffffff;
+
+  /* Layout */
+  --vivera-content-max: 1120px;
+  --vivera-content-wide: 1240px;
+
+  --vivera-page-x: 40px;
+  --vivera-page-x-mobile: 20px;
+
+  /* Section spacing */
+  --vivera-section-sm: 56px;
+  --vivera-section-md: 72px;
+  --vivera-section-lg: 96px;
+
+  /* Typography scale */
+  --vivera-body: 15px;
+  --vivera-small: 14px;
+
+  /* Buttons */
+  --vivera-button-w: 320px;
+  --vivera-button-h: 52px;
+}
+
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--vivera-font);
+  color: var(--vivera-black);
+  background: var(--vivera-bg-hero);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   BOX SIZING
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+button {
+  font: inherit;
+}
+
+
+/* =========================================================
+   TOUCH / INTERACTION
+   ========================================================= */
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

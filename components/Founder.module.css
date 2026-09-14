@@ -1,0 +1,1418 @@
+/* =========================================================
+   VÍVERA — FOUNDER
+   Compact design
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.section {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 780px;
+
+  padding: 72px 0 82px;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      180deg,
+      #F1E5DE 0%,
+      #ECECEC 18%,
+      #F4EDE8 82%,
+      #ECECEC 100%
+    );
+
+  overflow: hidden;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.container {
+  position: relative;
+
+  width:
+    min(
+      1120px,
+      calc(100% - 80px)
+    );
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    450px
+    minmax(0, 1fr);
+
+  column-gap: 48px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   PHOTO
+   ========================================================= */
+
+.photoSide {
+  position: relative;
+
+  width: 450px;
+
+  align-self: start;
+}
+
+
+.photoWrap {
+  position: relative;
+
+  width: 450px;
+  height: 593px;
+
+  overflow: hidden;
+
+  border-radius:
+    0 90px 0 0;
+
+  background: #E2D8D0;
+}
+
+
+.photo {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  user-select: none;
+
+  -webkit-user-drag: none;
+}
+
+
+/* =========================================================
+   NO ORBIT / CURVED DECORATION
+   ========================================================= */
+
+/*
+ * Старые photoThread / topThread / bottomThread
+ * полностью удалены.
+ *
+ * В Compact дизайне Founder нет декоративных
+ * круговых траекторий.
+ */
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.content {
+  position: relative;
+
+  width: 100%;
+
+  max-width: none;
+
+  min-height: 593px;
+
+  padding: 4px 0 8px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.titleBlock {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  width: max-content;
+
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+.label {
+  margin: 0;
+
+  padding: 0;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(
+      34px,
+      3vw,
+      46px
+    );
+
+  line-height: 0.55;
+
+  font-weight: 300;
+
+  letter-spacing: 0.025em;
+
+  color: #171717;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   TITLE METALLIC LINE
+   ========================================================= */
+
+.titleLine {
+  position: relative;
+
+  width: 100%;
+
+  max-width: none;
+
+  height: 12px;
+
+  margin-top: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.titleLineFill {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  top: 50%;
+
+  height: 1px;
+
+  transform:
+    translateY(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      #8A5F24 0%,
+      #D8AE62 18%,
+      #FFF0BD 34%,
+      #A9742B 50%,
+      #F2D18A 66%,
+      #FFF3C6 82%,
+      #8A5F24 100%
+    );
+
+  box-shadow:
+    0 0 1px rgba(255, 239, 185, 0.95),
+    0 0 3px rgba(184, 135, 57, 0.38);
+
+  opacity: 0.92;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   METALLIC SPHERE
+   ========================================================= */
+
+.sphere {
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  display: block;
+
+  overflow: visible;
+
+  pointer-events: none;
+
+  z-index: 5;
+
+  transform:
+    translate(-50%, -50%);
+}
+
+
+.titleSphere {
+  left: 50%;
+  top: 50%;
+}
+
+
+/* =========================================================
+   NAME
+   ========================================================= */
+
+.name {
+  margin:
+    25px 0 0;
+
+  padding: 0;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 26px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: -0.045em;
+
+  color: #111111;
+}
+
+
+/* =========================================================
+   TRANSCRIPTION
+   ========================================================= */
+
+.transcription {
+  margin-top: 13px;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.3;
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  color: #625B56;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.description {
+  margin:
+    25px auto 0;
+
+  padding: 0;
+
+  max-width: 620px;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.45;
+
+  font-weight: 400;
+
+  letter-spacing: -0.01em;
+
+  color: #181818;
+}
+
+
+/* =========================================================
+   EDUCATION
+   ========================================================= */
+
+.education {
+  display: grid;
+
+  grid-template-columns:
+    18px minmax(0, 1fr);
+
+  gap: 18px;
+
+  margin-top: 155px;
+
+  align-items: stretch;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   EDUCATION VERTICAL LINE
+   ========================================================= */
+
+.educationDecor {
+  position: relative;
+
+  width: 1px;
+
+  min-height: 100%;
+
+  align-self: stretch;
+
+  background:
+    linear-gradient(
+      180deg,
+      #8A5F24 0%,
+      #D8AE62 18%,
+      #FFF0BD 34%,
+      #A9742B 50%,
+      #F2D18A 66%,
+      #FFF3C6 82%,
+      #8A5F24 100%
+    );
+
+  box-shadow:
+    0 0 1px rgba(255, 239, 185, 0.95),
+    0 0 3px rgba(184, 135, 57, 0.28);
+
+  opacity: 0.92;
+}
+
+
+.educationLine {
+  position: absolute;
+
+  inset: 0;
+
+  width: 1px;
+}
+
+
+.educationSphere {
+  left: 50%;
+  top: 50%;
+}
+
+
+/* =========================================================
+   EDUCATION CONTENT
+   ========================================================= */
+
+.educationContent {
+  min-width: 0;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+
+.educationLabel {
+  margin:
+    0 0 24px;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  color: #77716C;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.documentsButton {
+  position: relative;
+
+  z-index: 5;
+
+  margin:
+    0 auto;
+
+  width: 395px;
+
+  max-width: 100%;
+
+  height: 56px;
+
+  padding: 0 24px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 26px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid rgba(184, 138, 67, 0.62);
+
+  border-radius: 28px;
+
+  background:
+    rgba(255, 252, 247, 0.28);
+
+  box-shadow:
+    0 8px 24px
+    rgba(80, 60, 40, 0.06);
+
+  backdrop-filter: blur(6px);
+
+  -webkit-backdrop-filter: blur(6px);
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  color: #A67C42;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.documentsButton:hover {
+  background:
+    rgba(255, 252, 247, 0.52);
+
+  border-color:
+    rgba(184, 138, 67, 0.85);
+
+  box-shadow:
+    0 10px 28px
+    rgba(80, 60, 40, 0.09);
+
+  transform:
+    translateY(-1px);
+}
+
+
+.documentsButton:active {
+  transform:
+    translateY(0);
+}
+
+
+.documentsButton:focus-visible {
+  outline:
+    1px solid rgba(177, 134, 67, 0.95);
+
+  outline-offset: 5px;
+}
+
+
+/* =========================================================
+   BUTTON ARROW
+   ========================================================= */
+
+.buttonArrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  color: #A67C42;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.buttonArrowOpen {
+  transform:
+    rotate(90deg);
+}
+
+
+/* =========================================================
+   DOCUMENTS
+   ========================================================= */
+
+.documents {
+  width: 100%;
+
+  margin-top: 22px;
+
+  border-top:
+    1px solid rgba(170, 130, 70, 0.28);
+
+  border-bottom:
+    1px solid rgba(170, 130, 70, 0.28);
+
+  animation:
+    documentsIn 0.35s ease both;
+
+  text-align: center;
+}
+
+
+.document {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    24px;
+
+  gap: 18px;
+
+  align-items: start;
+
+  padding: 14px 4px;
+
+  border: 0;
+
+  border-bottom:
+    1px solid rgba(170, 130, 70, 0.18);
+
+  background: transparent;
+
+  text-align: center;
+
+  color: #2E2B28;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    padding-left 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.document:last-child {
+  border-bottom: 0;
+}
+
+
+.document:hover {
+  padding-left: 9px;
+
+  background:
+    rgba(255, 252, 248, 0.32);
+
+  color: #A87930;
+}
+
+
+.documentTitle {
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  text-align: center;
+}
+
+
+.documentArrow {
+  padding-top: 1px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  color: #A87930;
+}
+
+
+/* =========================================================
+   DOCUMENT ANIMATION
+   ========================================================= */
+
+@keyframes documentsIn {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.modal {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  background:
+    rgba(27, 25, 23, 0.82);
+
+  backdrop-filter: blur(7px);
+
+  -webkit-backdrop-filter: blur(7px);
+
+  animation:
+    modalIn 0.25s ease;
+}
+
+
+.modalInner {
+  position: relative;
+
+  width:
+    min(920px, 100%);
+
+  max-height:
+    calc(100vh - 60px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 28px;
+
+  box-sizing: border-box;
+
+  border-radius: 10px;
+
+  background: #F7F4EF;
+
+  box-shadow:
+    0 30px 80px
+    rgba(0, 0, 0, 0.35);
+}
+
+
+.modalClose {
+  position: absolute;
+
+  top: 10px;
+  right: 13px;
+
+  width: 38px;
+  height: 38px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #393633;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+
+.modalTitle {
+  padding:
+    0 45px 20px 4px;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+
+  font-weight: 500;
+
+  color: #35322F;
+}
+
+
+.modalImageWrap {
+  min-height: 0;
+
+  overflow: auto;
+
+  display: flex;
+
+  justify-content: center;
+
+  border:
+    1px solid #DDD8D0;
+
+  background: #ECE8E2;
+}
+
+
+.modalImage {
+  display: block;
+
+  max-width: 100%;
+
+  max-height:
+    calc(100vh - 155px);
+
+  width: auto;
+
+  height: auto;
+
+  object-fit: contain;
+
+  user-select: none;
+
+  -webkit-user-drag: none;
+}
+
+
+/* =========================================================
+   MODAL ANIMATION
+   ========================================================= */
+
+@keyframes modalIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .container {
+    width:
+      min(
+        960px,
+        calc(100% - 56px)
+      );
+
+    grid-template-columns:
+      450px
+      minmax(0, 1fr);
+
+    column-gap: 38px;
+  }
+
+
+  .photoSide {
+    width: 450px;
+  }
+
+
+  .photoWrap {
+    width: 450px;
+    height: 593px;
+  }
+
+
+  .label {
+    font-size:
+      clamp(
+        34px,
+        3vw,
+        46px
+      );
+  }
+
+
+  .name {
+    font-size: 26px;
+  }
+
+
+  .transcription {
+    font-size: 18px;
+  }
+
+
+  .description {
+    font-size: 16px;
+  }
+
+
+  .education {
+    margin-top: 110px;
+  }
+
+
+  .documentsButton {
+    width: 395px;
+  }
+
+
+  .documentTitle {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================================
+   INTERMEDIATE RESPONSIVE
+   721–938 PX
+   ========================================================= */
+
+@media (min-width: 721px) and (max-width: 938px) {
+
+  .section {
+    min-height: auto;
+
+    padding:
+      64px 0 72px;
+  }
+
+
+  .container {
+    width:
+      calc(100% - 48px);
+
+    grid-template-columns:
+      minmax(0, 42%)
+      minmax(0, 1fr);
+
+    column-gap: 28px;
+
+    align-items: start;
+  }
+
+
+  /* -----------------------------------------------
+     PHOTO
+     ----------------------------------------------- */
+
+  .photoSide {
+    width: 100%;
+  }
+
+
+  .photoWrap {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio:
+      450 / 593;
+
+    border-radius:
+      0 72px 0 0;
+  }
+
+
+  /* -----------------------------------------------
+     CONTENT
+     ----------------------------------------------- */
+
+  .content {
+    min-width: 0;
+
+    width: 100%;
+
+    padding:
+      4px 0 8px;
+  }
+
+
+  /* -----------------------------------------------
+     TITLE
+     ----------------------------------------------- */
+
+  .titleBlock {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  .label {
+    width: 100%;
+    max-width: 100%;
+
+    font-size:
+      clamp(
+        28px,
+        4.2vw,
+        38px
+      );
+
+    line-height: 0.7;
+
+    white-space: normal;
+
+    overflow-wrap: normal;
+
+    word-break: normal;
+  }
+
+
+  .titleLine {
+    width: 100%;
+
+    margin-top: 22px;
+  }
+
+
+  /* -----------------------------------------------
+     NAME
+     ----------------------------------------------- */
+
+  .name {
+    font-size:
+      clamp(
+        23px,
+        2.8vw,
+        26px
+      );
+  }
+
+
+  /* -----------------------------------------------
+     DESCRIPTION
+     ----------------------------------------------- */
+
+  .description {
+    max-width: 100%;
+
+    font-size:
+      clamp(
+        14px,
+        1.7vw,
+        16px
+      );
+  }
+
+
+  /* -----------------------------------------------
+     EDUCATION
+     ----------------------------------------------- */
+
+  .education {
+    grid-template-columns:
+      14px minmax(0, 1fr);
+
+    gap: 13px;
+
+    margin-top: 90px;
+  }
+
+
+  .educationLabel {
+    font-size:
+      clamp(
+        13px,
+        1.6vw,
+        15px
+      );
+  }
+
+
+  /* -----------------------------------------------
+     DOCUMENT BUTTON
+     ----------------------------------------------- */
+
+  .documentsButton {
+    width: 100%;
+    max-width: 100%;
+
+    height: 54px;
+
+    padding:
+      0 16px;
+
+    gap: 16px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.11em;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 720px) {
+
+  .section {
+    min-height: auto;
+
+    padding:
+      58px 0 68px;
+  }
+
+
+  .container {
+    width:
+      calc(100% - 36px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 38px;
+
+    align-items: stretch;
+  }
+
+
+  .photoSide {
+    width: 100%;
+  }
+
+
+  .photoWrap {
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio:
+      0.9;
+
+    border-radius:
+      0 70px 0 0;
+  }
+
+
+  .content {
+    max-width: none;
+
+    min-height: auto;
+
+    padding: 0;
+
+    text-align: center;
+  }
+
+
+  .titleBlock {
+    width: 100%;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+  }
+
+
+  .label {
+    width: 100%;
+
+    max-width: 100%;
+
+    font-size:
+      clamp(
+        29px,
+        8.8vw,
+        40px
+      );
+
+    line-height: 0.7;
+
+    white-space: normal;
+
+    overflow-wrap: normal;
+
+    word-break: normal;
+  }
+
+
+  .titleLine {
+    width: 100%;
+
+    max-width: none;
+
+    margin-top: 22px;
+  }
+
+
+  .name {
+    margin-top: 23px;
+
+    font-size: 26px;
+  }
+
+
+  .transcription {
+    margin-top: 11px;
+
+    font-size: 18px;
+  }
+
+
+  .description {
+    margin-top: 23px;
+
+    max-width: 100%;
+
+    font-size: 16px;
+
+    line-height: 1.48;
+
+    text-align: center;
+  }
+
+
+  .education {
+    grid-template-columns:
+      16px minmax(0, 1fr);
+
+    gap: 15px;
+
+    margin-top: 70px;
+
+    text-align: center;
+  }
+
+
+  .educationLabel {
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+  }
+
+
+  .documentsButton {
+    width: 100%;
+
+    max-width: 100%;
+
+    height: 54px;
+
+    padding:
+      0 18px;
+
+    gap: 18px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.12em;
+  }
+
+
+  .documents {
+    margin-top: 20px;
+  }
+
+
+  .document {
+    padding:
+      13px 2px;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      20px;
+  }
+
+
+  .documentTitle {
+    font-size: 9px;
+
+    text-align: center;
+  }
+
+
+  .modal {
+    padding: 14px;
+  }
+
+
+  .modalInner {
+    max-height:
+      calc(100vh - 28px);
+
+    padding: 18px;
+  }
+
+
+  .modalTitle {
+    font-size: 12px;
+  }
+
+
+  .modalImage {
+    max-height:
+      calc(100vh - 130px);
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .container {
+    width:
+      calc(100% - 30px);
+  }
+
+
+  .section {
+    padding:
+      50px 0 60px;
+  }
+
+
+  .label {
+    font-size: 31px;
+
+    white-space: normal;
+  }
+
+
+  .name {
+    font-size: 26px;
+  }
+
+
+  .transcription {
+    font-size: 18px;
+  }
+
+
+  .description {
+    font-size: 15px;
+  }
+
+
+  .titleLine {
+    max-width: none;
+
+    margin-top: 22px;
+  }
+
+
+  .education {
+    margin-top: 55px;
+  }
+
+
+  .documentsButton {
+    font-size: 10px;
+  }
+
+
+  .documentTitle {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .section *,
+  .section *::before,
+  .section *::after {
+    transition: none !important;
+
+    animation: none !important;
+  }
+}

@@ -1,0 +1,453 @@
+/* =========================================================
+   VÍVERA — AUDIENCE
+   Compact design
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.section {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 460px;
+
+  margin: 0;
+  padding: 82px 0 88px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+background:
+  linear-gradient(
+    180deg,
+    #F3ECE7 0%,
+    #F3ECE7 2%,
+    #F9F5F1 12%,
+    #F5EEE9 88%,
+    #F1E5DE 98%,
+    #F1E5DE 100%
+  );
+
+  color: #171717;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.card {
+  position: relative;
+
+  z-index: 2;
+
+  width:
+    min(
+      600px,
+      calc(100% - 160px)
+    );
+
+  min-height: 300px;
+
+  margin: 0 auto;
+
+  padding:
+    52px 62px 56px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    rgba(254, 254, 254, 0.86);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 18px 50px
+    rgba(76, 56, 40, 0.07);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.content {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.kicker {
+  margin: 0;
+
+  padding: 0;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(
+      27px,
+      2.2vw,
+      34px
+    );
+
+  line-height: 1.10;
+
+  font-weight: 400;
+
+  letter-spacing: 0.01em;
+
+  color: #171717;
+}
+
+
+/* =========================================================
+   GOLD LINE
+   ========================================================= */
+
+.goldLine {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 240px;
+
+  height: 13px;
+
+  margin-top: 19px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================================
+   METALLIC LINE
+   EXACT MANIFESTO MATERIAL
+   ========================================================= */
+
+.goldLineFill {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  top: 50%;
+
+  width: 100%;
+
+  height: 1px;
+
+  transform:
+    translateY(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      #8A5F24 0%,
+      #D8AE62 18%,
+      #FFF0BD 34%,
+      #A9742B 50%,
+      #F2D18A 66%,
+      #FFF3C6 82%,
+      #8A5F24 100%
+    );
+
+  box-shadow:
+    0 0 1px rgba(255, 239, 185, 0.95),
+    0 0 3px rgba(184, 135, 57, 0.38);
+
+  opacity: 0.92;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   SPHERE
+   ========================================================= */
+
+.sphere {
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  display: block;
+
+  overflow: visible;
+
+  pointer-events: none;
+
+  z-index: 5;
+
+  transform:
+    translate(-50%, -50%);
+}
+
+
+/* =========================================================
+   SPHERE — EXACTLY CENTERED ON LINE
+   ========================================================= */
+
+.headingSphere {
+  left: 50%;
+  top: 50%;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.text {
+  width: 100%;
+
+  margin-top: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+/* =========================================================
+   MAIN TEXT
+   ALL THREE LINES — SAME FONT SIZE
+   ========================================================= */
+
+.intro,
+.mainText {
+  margin: 0;
+
+  padding: 0;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(
+      17px,
+      1.45vw,
+      21px
+    );
+
+  line-height: 1.42;
+
+  font-weight: 300;
+
+  letter-spacing: -0.012em;
+
+  color: #171717;
+}
+
+
+/* =========================================================
+   GOLD ACCENTS
+   ========================================================= */
+
+.intro span,
+.mainText span {
+  color: #A67C42;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .section {
+    min-height: 500px;
+
+    padding:
+      68px 0 76px;
+  }
+
+
+  .card {
+    width:
+      min(
+        680px,
+        calc(100% - 100px)
+      );
+
+    min-height: 280px;
+
+    padding:
+      46px 50px 50px;
+  }
+
+
+  .kicker {
+    font-size: 29px;
+  }
+
+
+  .intro,
+  .mainText {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .section {
+    min-height: 410px;
+
+    padding:
+      52px 0 58px;
+  }
+
+
+  .card {
+    width:
+      calc(100% - 32px);
+
+    min-height: 300px;
+
+    padding:
+      38px 22px 42px;
+
+    border-radius: 17px;
+  }
+
+
+  .kicker {
+    font-size: 26px;
+  }
+
+
+  .goldLine {
+    max-width: 190px;
+
+    margin-top: 17px;
+  }
+
+
+  .text {
+    margin-top: 25px;
+
+    gap: 5px;
+  }
+
+
+  .intro,
+  .mainText {
+    font-size: 16px;
+
+    line-height: 1.42;
+  }
+
+
+  .sphere {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .section {
+    min-height: 390px;
+
+    padding:
+      46px 0 52px;
+  }
+
+
+  .card {
+    width:
+      calc(100% - 30px);
+
+    min-height: 285px;
+
+    padding:
+      34px 18px 38px;
+  }
+
+
+  .kicker {
+    font-size: 24px;
+  }
+
+
+  .intro,
+  .mainText {
+    font-size: 15px;
+  }
+
+
+  .goldLine {
+    max-width: 170px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .section *,
+  .section *::before,
+  .section *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

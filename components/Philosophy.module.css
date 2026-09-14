@@ -1,0 +1,638 @@
+/* =========================================================
+   VÍVERA — PHILOSOPHY
+   Compact editorial design
+   ========================================================= */
+
+@font-face {
+  font-family: "Tilda Sans";
+  src: url("/fonts/TildaSans-VF.woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.philosophy {
+  position: relative;
+
+  width: 100%;
+  min-height: 700px;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  /*
+   * Мягкий переход из предыдущего блока.
+   * Без резкой границы между Approach и Philosophy.
+   */
+
+  background:
+    linear-gradient(
+      180deg,
+      #F1E7E1 0%,
+      #F3ECE7 16%,
+      #F3ECE7 100%
+    );
+
+  color: #151515;
+
+  font-family: "Tilda Sans", sans-serif;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.container {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(
+    1280px,
+    calc(100% - 220px)
+  );
+
+  min-height: 700px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.02fr)
+    minmax(430px, 0.78fr);
+
+  column-gap: clamp(
+    45px,
+    4vw,
+    70px
+  );
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.content {
+  position: relative;
+
+  z-index: 10;
+
+  padding:
+    55px
+    0
+    55px;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.title {
+  max-width: 690px;
+
+  margin: 0 0 38px;
+  padding: 0;
+
+  font-family:
+    "Tilda Sans",
+    sans-serif;
+
+  font-size:
+    clamp(
+      39px,
+      3.2vw,
+      56px
+    );
+
+  font-weight: 300;
+
+  line-height: 1.06;
+
+  letter-spacing: -0.038em;
+
+  color: #111111;
+}
+
+
+.titleAccent {
+  color: #B38A4B;
+}
+
+
+/* =========================================================
+   BODY TEXT
+   ========================================================= */
+
+.body {
+  max-width: 650px;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.body p {
+  margin: 0;
+  padding: 0;
+
+  font-family:
+    "Tilda Sans",
+    sans-serif;
+
+  font-size:
+    clamp(
+      16px,
+      1.25vw,
+      19px
+    );
+
+  font-weight: 300;
+
+  line-height: 1.55;
+
+  letter-spacing: -0.012em;
+
+  color: #292725;
+}
+
+
+/* =========================================================
+   STATEMENT
+   ========================================================= */
+
+.statement {
+  display: flex;
+
+  align-items: stretch;
+
+  gap: 28px;
+
+  margin-top: 38px;
+
+  padding: 0;
+}
+
+
+/* =========================================================
+   STATEMENT VERTICAL LINE
+   ========================================================= */
+
+.statementLine {
+  position: relative;
+
+  flex: 0 0 1px;
+
+  width: 1px;
+
+  min-height: 112px;
+
+  margin: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #8A5F24 0%,
+      #D8AE62 18%,
+      #FFF0BD 34%,
+      #A9742B 50%,
+      #F2D18A 66%,
+      #FFF3C6 82%,
+      #8A5F24 100%
+    );
+
+  box-shadow:
+    0 0 1px rgba(255, 239, 185, 0.95),
+    0 0 3px rgba(184, 135, 57, 0.38);
+
+  opacity: 0.92;
+}
+
+
+/* =========================================================
+   STATEMENT METALLIC SPHERE
+   ========================================================= */
+
+.statementSphere {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  transform:
+    translate(-50%, -50%);
+
+  display: block;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 28% 22%,
+      #FFFFFF 0%,
+      #FFF8DC 8%,
+      #F5D98A 18%,
+      #D6A54F 34%,
+      #A86F25 50%,
+      #613D14 66%,
+      #D19A42 80%,
+      #3D250D 100%
+    );
+
+  border: 1px solid #FFF0C0;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 1px 4px rgba(77, 48, 16, 0.35);
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   SPHERE SPECULAR HIGHLIGHT
+   ========================================================= */
+
+.statementSphere::before {
+  content: "";
+
+  position: absolute;
+
+  left: 2.4px;
+  top: 2px;
+
+  width: 2.4px;
+  height: 2.4px;
+
+  border-radius: 50%;
+
+  background: #FFFFFF;
+
+  opacity: 0.98;
+}
+
+
+/* =========================================================
+   STATEMENT TEXT
+   ========================================================= */
+
+.statementText {
+  padding-top: 4px;
+
+  margin: 0;
+}
+
+
+.statementText p {
+  margin: 0 0 7px;
+  padding: 0;
+
+  font-family:
+    "Tilda Sans",
+    sans-serif;
+
+  font-size:
+    clamp(
+      24px,
+      1.9vw,
+      32px
+    );
+
+  font-weight: 300;
+
+  line-height: 1.16;
+
+  letter-spacing: -0.025em;
+
+  color: #181818;
+}
+
+
+.statementText p:last-child {
+  margin-bottom: 0;
+}
+
+
+.statementText span {
+  color: #B38A4B;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.imageWrap {
+  position: relative;
+
+  z-index: 4;
+
+  width: 100%;
+
+  /*
+   * Вертикальная фотография:
+   * высота заметно больше ширины.
+   */
+
+  aspect-ratio: 0.78 / 1;
+
+  max-height: 600px;
+
+  justify-self: end;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  background: #D9D0C8;
+
+  box-shadow:
+    0 25px 70px
+    rgba(76, 56, 40, 0.08);
+}
+
+
+.image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+
+  transform: scale(1.002);
+}
+
+
+/* =========================================================
+   IMAGE GLOW
+   ========================================================= */
+
+.imageGlow {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.09),
+      transparent 32%,
+      transparent 70%,
+      rgba(188, 151, 104, 0.06)
+    );
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .philosophy {
+    min-height: 650px;
+  }
+
+
+  .container {
+    width:
+      calc(100% - 110px);
+
+    min-height: 650px;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(360px, 0.78fr);
+
+    column-gap: 40px;
+  }
+
+
+  .content {
+    padding:
+      50px
+      0;
+  }
+
+
+  .title {
+    font-size: 42px;
+
+    margin-bottom: 32px;
+  }
+
+
+  .body p {
+    font-size: 17px;
+
+    line-height: 1.52;
+  }
+
+
+  .statement {
+    margin-top: 32px;
+
+    gap: 25px;
+  }
+
+
+  .statementText p {
+    font-size: 26px;
+  }
+
+
+  .imageWrap {
+    max-height: 560px;
+
+    aspect-ratio: 0.78 / 1;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .philosophy {
+    min-height: auto;
+
+    padding:
+      0 0 55px;
+  }
+
+
+  .container {
+    width:
+      calc(100% - 40px);
+
+    min-height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+  }
+
+
+  .content {
+    order: 1;
+
+    padding:
+      58px
+      0
+      36px;
+  }
+
+
+  .title {
+    max-width: 100%;
+
+    margin-bottom: 25px;
+
+    font-size:
+      clamp(
+        34px,
+        9vw,
+        43px
+      );
+
+    line-height: 1.06;
+  }
+
+
+  .body {
+    max-width: 100%;
+  }
+
+
+  .body p {
+    font-size: 16px;
+
+    line-height: 1.52;
+  }
+
+
+  .statement {
+    margin-top: 32px;
+
+    gap: 18px;
+  }
+
+
+  .statementLine {
+    min-height: 105px;
+  }
+
+
+  .statementText {
+    padding-top: 4px;
+  }
+
+
+  .statementText p {
+    font-size: 23px;
+
+    line-height: 1.16;
+  }
+
+
+  .imageWrap {
+    order: 2;
+
+    width: 82%;
+
+    max-height: none;
+
+    aspect-ratio: 0.78 / 1;
+
+    align-self: center;
+
+    border-radius: 16px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .container {
+    width:
+      calc(100% - 30px);
+  }
+
+
+  .content {
+    padding-top: 48px;
+  }
+
+
+  .title {
+    font-size: 32px;
+  }
+
+
+  .body p {
+    font-size: 15px;
+  }
+
+
+  .statementText p {
+    font-size: 21px;
+  }
+
+
+  .imageWrap {
+    width: 86%;
+
+    aspect-ratio: 0.76 / 1;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .image {
+    transform: none;
+  }
+}

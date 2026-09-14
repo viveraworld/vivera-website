@@ -1,0 +1,979 @@
+/* =========================================================
+   VÍVERA — MISSION
+   COMPACT DESIGN
+   ========================================================= */
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.mission {
+  position: relative;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 90px 0 100px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      #E6E0DE 0%,
+      #F7F3EE 18%,
+      #F7F3EE 82%,
+      #F1E5DE 100%
+    );
+
+  color: #171717;
+
+  font-family: "Tilda Sans", sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.container {
+  position: relative;
+
+  width: min(1180px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    38%
+    minmax(0, 1fr);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CENTRAL VERTICAL METALLIC LINE
+   FULL HEIGHT OF THE MISSION BLOCK
+   ========================================================= */
+
+.verticalLine {
+  position: absolute;
+
+  left: 38%;
+
+  top: -110px;
+  bottom: -35px;
+
+  width: 1px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #8A5F24 0%,
+      #D8AE62 18%,
+      #FFF0BD 34%,
+      #A9742B 50%,
+      #F2D18A 66%,
+      #FFF3C6 82%,
+      #8A5F24 100%
+    );
+
+  box-shadow:
+    0 0 1px rgba(255, 239, 185, 0.95),
+    0 0 3px rgba(184, 135, 57, 0.38);
+
+  opacity: 0.92;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   METALLIC SPHERE
+   ========================================================= */
+
+.sphere {
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  display: block;
+
+  overflow: visible;
+
+  z-index: 10;
+
+  pointer-events: none;
+
+  transform: translate(-50%, -50%);
+}
+
+
+/* =========================================================
+   LEFT COLUMN
+   ========================================================= */
+
+.leftColumn {
+  position: relative;
+
+  z-index: 5;
+
+  min-width: 0;
+
+  padding-right: 70px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MISSION HEADING
+   ========================================================= */
+
+.missionHeading {
+  position: relative;
+
+  width: max-content;
+  max-width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.missionHeading h2 {
+  margin: 0;
+
+  font-family:
+    "Tilda Sans",
+    sans-serif;
+
+  font-size: clamp(
+    34px,
+    3vw,
+    46px
+  );
+
+  line-height: 0.55;
+
+  font-weight: 300;
+
+  letter-spacing: 0.025em;
+
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   HEADING LINE
+   ========================================================= */
+
+.headingLine {
+  position: relative;
+
+  width: 100%;
+  height: 12px;
+
+  margin-top: 22px;
+}
+
+
+.headingLineFill {
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 100%;
+  height: 1px;
+
+  transform: translateY(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      #8A5F24 0%,
+      #D8AE62 18%,
+      #FFF0BD 34%,
+      #A9742B 50%,
+      #F2D18A 66%,
+      #FFF3C6 82%,
+      #8A5F24 100%
+    );
+
+  box-shadow:
+    0 0 1px rgba(255, 239, 185, 0.95),
+    0 0 3px rgba(184, 135, 57, 0.38);
+
+  opacity: 0.92;
+}
+
+
+.headingSphere {
+  left: 50%;
+  top: 50%;
+}
+
+
+/* =========================================================
+   LEFT STATEMENTS
+   ========================================================= */
+
+.leftStatement {
+  margin-top: 54px;
+
+  padding-left: 42px;
+
+  box-sizing: border-box;
+}
+
+
+.statementBlack,
+.statementGold {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 21px;
+  line-height: 1.55;
+
+  font-weight: 400;
+
+  letter-spacing: -0.005em;
+}
+
+
+.statementBlack {
+  color: #171717;
+}
+
+
+.statementGold {
+  margin-top: 34px;
+
+  color: #A67C42;
+}
+
+
+/* =========================================================
+   RIGHT COLUMN
+   ========================================================= */
+
+.rightColumn {
+  position: relative;
+
+  z-index: 5;
+
+  min-width: 0;
+
+  padding:
+    52px
+    0
+    0
+    60px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   AGE
+   ========================================================= */
+
+.ageBlock {
+  margin: 0;
+  padding: 0;
+}
+
+
+.ageBlock h2 {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 24px;
+  line-height: 1.18;
+
+  font-weight: 400;
+
+  letter-spacing: -0.02em;
+
+  color: #171717;
+}
+
+
+.ageBlock p {
+  max-width: 760px;
+
+  margin: 15px auto 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 15px;
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  letter-spacing: -0.005em;
+
+  color: #171717;
+}
+
+
+/* =========================================================
+   SEMANTIC HORIZONTAL RULES
+   ========================================================= */
+
+.semanticRule {
+  position: relative;
+
+  width: calc(
+    100% + ((100vw - 1180px) / 2)
+  );
+
+  max-width: calc(
+    100% + ((100vw - 100%) / 2)
+  );
+
+  height: 12px;
+
+  margin-left: -60px;
+
+  pointer-events: none;
+}
+
+
+.semanticRuleLine {
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 100%;
+  height: 1px;
+
+  transform: translateY(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      #8A5F24 0%,
+      #D8AE62 18%,
+      #FFF0BD 34%,
+      #A9742B 50%,
+      #F2D18A 66%,
+      #FFF3C6 82%,
+      #8A5F24 100%
+    );
+
+  box-shadow:
+    0 0 1px rgba(255, 239, 185, 0.95),
+    0 0 3px rgba(184, 135, 57, 0.38);
+
+  opacity: 0.92;
+}
+
+
+.semanticRuleSphere {
+  left: 0%;
+  top: 50%;
+}
+
+
+/* =========================================================
+   RULE 01 — AGE → ENERGY
+   ========================================================= */
+
+.ageBlock + .semanticRule {
+  margin-top: 34px;
+}
+
+
+/* =========================================================
+   ENERGY
+   ========================================================= */
+
+.energyBlock {
+  margin-top: 30px;
+
+  padding: 0;
+}
+
+
+.energyBlock h2 {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 25px;
+  line-height: 1.22;
+
+  font-weight: 400;
+
+  letter-spacing: -0.02em;
+
+  color: #171717;
+}
+
+
+.energyBlock p {
+  max-width: 720px;
+
+  margin: 24px auto 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 15px;
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  letter-spacing: -0.005em;
+
+  color: #171717;
+}
+
+
+.goldInline {
+  color: #A67C42;
+}
+
+
+/* =========================================================
+   RULE 02 — ENERGY → SYSTEM
+   ========================================================= */
+
+.energyBlock + .semanticRule {
+  margin-top: 24px;
+}
+
+
+/* =========================================================
+   SYSTEM
+   ========================================================= */
+
+.systemBlock {
+  margin-top: 20px;
+
+  padding: 0;
+}
+
+
+.systemBlock p {
+  max-width: 760px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 15px;
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  letter-spacing: -0.005em;
+
+  color: #171717;
+}
+
+
+.systemBlock h2 {
+  max-width: 800px;
+
+  margin: 25px auto 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 25px;
+  line-height: 1.25;
+
+  font-weight: 400;
+
+  letter-spacing: -0.02em;
+
+  color: #171717;
+}
+
+
+.systemBlock h2 span {
+  color: #A67C42;
+}
+
+
+/* =========================================================
+   CULTURE
+   ========================================================= */
+
+.cultureBlock {
+  margin-top: 28px;
+
+  padding: 0;
+}
+
+
+.cultureBlock p {
+  max-width: 780px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 15px;
+  line-height: 1.4;
+
+  font-weight: 400;
+
+  letter-spacing: -0.005em;
+
+  color: #171717;
+}
+
+
+.cultureBlock p + p {
+  margin-top: 25px;
+}
+
+
+/* =========================================================
+   WOMEN
+   ========================================================= */
+
+.womenBlock {
+  margin-top: 40px;
+
+  padding: 0;
+}
+
+
+.womenBlock p {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  font-weight: 600;
+
+  letter-spacing: -0.005em;
+
+  color: #171717;
+}
+
+
+.womenBlock p + p {
+  margin-top: 12px;
+}
+
+
+.womenBlock .emphasis {
+  color: #A67C42;
+}
+
+
+/* =========================================================
+   RULE 03 — WOMEN → ENDING
+   ========================================================= */
+
+.womenBlock + .semanticRule {
+  margin-top: 24px;
+}
+
+
+/* =========================================================
+   ENDING
+   ========================================================= */
+
+.ending {
+  margin-top: 30px;
+
+  padding: 0;
+
+  text-align: center;
+}
+
+
+.french {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 27px;
+  line-height: 1.2;
+
+  font-weight: 300;
+
+  letter-spacing: 0.02em;
+
+  color: #171717;
+}
+
+
+.russian {
+  margin: 5px 0 0;
+  padding: 0;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 17px;
+  line-height: 1.3;
+
+  font-weight: 400;
+
+  color: #A67C42;
+}
+
+
+/* =========================================================
+   IDSWN EXPLANATION
+   CENTERED IN THE WHOLE MISSION BLOCK
+   ========================================================= */
+
+.missionExplanation {
+  position: absolute;
+
+  left: 50%;
+  bottom: 18px;
+
+  width: min(1100px, calc(100% - 80px));
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  transform: translateX(-50%);
+
+  text-align: center;
+
+  font-family: "Tilda Sans", sans-serif;
+
+  font-size: 11px;
+  line-height: 1.35;
+
+  font-weight: 300;
+  font-style: italic;
+
+  letter-spacing: 0;
+
+  color: #77716C;
+
+  background: transparent;
+
+  z-index: 20;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .mission {
+    padding:
+      90px
+      0
+      100px;
+  }
+
+
+  .verticalLine {
+    top: -90px;
+    bottom: -100px;
+  }
+
+
+  .container {
+    width: calc(100% - 56px);
+  }
+
+
+  .leftColumn {
+    padding-right: 48px;
+  }
+
+
+  .rightColumn {
+    padding-left: 44px;
+
+    padding-top: 48px;
+  }
+
+
+  .missionHeading h2 {
+    font-size: 43px;
+  }
+
+
+  .statementBlack,
+  .statementGold {
+    font-size: 19px;
+  }
+
+
+  .ageBlock h2 {
+    font-size: 30px;
+  }
+
+
+  .energyBlock h2,
+  .systemBlock h2 {
+    font-size: 28px;
+  }
+
+
+  .semanticRule {
+    margin-left: -44px;
+
+    width: calc(
+      100% + 44px + 28px
+    );
+
+    max-width: none;
+  }
+
+
+  .missionExplanation {
+    width: calc(100% - 56px);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .mission {
+    padding:
+      70px
+      0
+      80px;
+  }
+
+
+  .container {
+    width: calc(100% - 40px);
+
+    display: block;
+  }
+
+
+  .verticalLine {
+    display: none;
+  }
+
+
+  .leftColumn {
+    padding: 0;
+  }
+
+
+  .rightColumn {
+    padding:
+      70px
+      0
+      0;
+
+    text-align: center;
+  }
+
+
+  .missionHeading {
+    width: 100%;
+  }
+
+
+  .missionHeading h2 {
+    font-size: 37px;
+
+    white-space: normal;
+  }
+
+
+  .headingLine {
+    width: min(100%, 360px);
+  }
+
+
+  .leftStatement {
+    padding-left: 20px;
+
+    margin-top: 40px;
+  }
+
+
+  .statementBlack,
+  .statementGold {
+    font-size: 18px;
+
+    line-height: 1.5;
+  }
+
+
+  .ageBlock h2 {
+    font-size: 28px;
+  }
+
+
+  .ageBlock p,
+  .energyBlock p,
+  .systemBlock p,
+  .cultureBlock p {
+    font-size: 14px;
+  }
+
+
+  .energyBlock h2,
+  .systemBlock h2 {
+    font-size: 26px;
+  }
+
+
+  .semanticRule {
+    width: calc(100% + 20px);
+
+    margin-left: 0;
+
+    margin-right: -20px;
+
+    max-width: none;
+  }
+
+
+  .missionExplanation {
+    bottom: 14px;
+
+    width: calc(100% - 40px);
+
+    padding:
+      0px
+      10px;
+
+    font-size: 9.5px;
+
+    line-height: 1.35;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .mission {
+    padding:
+      58px
+      0
+      70px;
+  }
+
+
+  .container {
+    width: calc(100% - 32px);
+  }
+
+
+  .missionHeading h2 {
+    font-size: 31px;
+  }
+
+
+  .leftStatement {
+    padding-left: 14px;
+  }
+
+
+  .statementBlack,
+  .statementGold {
+    font-size: 17px;
+  }
+
+
+  .ageBlock h2 {
+    font-size: 25px;
+  }
+
+
+  .energyBlock h2,
+  .systemBlock h2 {
+    font-size: 23px;
+  }
+
+
+  .womenBlock p {
+    font-size: 16px;
+  }
+
+
+  .french {
+    font-size: 24px;
+  }
+
+
+  .semanticRule {
+    width: calc(100% + 16px);
+
+    margin-right: -16px;
+  }
+
+
+  .missionExplanation {
+    bottom: 12px;
+
+    width: calc(100% - 32px);
+
+    padding:
+      0px
+      8px;
+
+    font-size: 9px;
+
+    line-height: 1.3;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .mission *,
+  .mission *::before,
+  .mission *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+
+}

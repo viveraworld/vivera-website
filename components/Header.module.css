@@ -1,0 +1,499 @@
+/* =====================================================
+   VÍVERA — HEADER
+   ===================================================== */
+
+.siteHeader {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  width: 100%;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 4.9vw;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      90deg,
+      #EBE4E2 0%,
+      #EBE4E2 48%,
+      rgba(235, 228, 226, 0.98) 56%,
+      rgba(235, 228, 226, 0.82) 68%,
+      rgba(235, 228, 226, 0.52) 80%,
+      rgba(235, 228, 226, 0.22) 91%,
+      rgba(235, 228, 226, 0) 100%
+    );
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.headerLogo {
+  flex: 0 0 auto;
+
+  width: 205px;
+}
+
+.headerLogoImage {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* =====================================================
+   MAIN NAVIGATION
+   ===================================================== */
+
+.headerNav {
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+
+  transform: translateX(-50%);
+
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: clamp(42px, 4.5vw, 70px);
+
+  white-space: nowrap;
+}
+
+.headerNavLink {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+
+  text-decoration: none;
+
+  font-family:
+    "Tilda Sans",
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: 0.025em;
+
+  color: #171717;
+
+  transition:
+    opacity 0.2s ease;
+}
+
+.headerNavLink:hover {
+  opacity: 0.6;
+}
+
+
+/* =====================================================
+   JOIN BUTTON
+   ===================================================== */
+
+.headerJoin {
+  position: absolute;
+
+  top: 50%;
+  right: 4.9vw;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+
+  padding: 0 24px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid rgba(158, 118, 63, 0.82);
+
+  border-radius: 25px;
+
+  background:
+    linear-gradient(
+      105deg,
+      #D6AB67 0%,
+      #E2C380 18%,
+      #E3D0A9 35%,
+      #F5E8C9 50%,
+      #E2CE9F 64%,
+      #E2C380 82%,
+      #D6AB67 100%
+    );
+
+  color: #5E431F;
+
+  text-decoration: none;
+
+  font-family:
+    "Tilda Sans",
+    sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: 0.045em;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 2px 7px rgba(123, 84, 34, 0.16),
+    inset 0 1px 1px rgba(255, 247, 220, 0.55);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.headerJoin:hover {
+  opacity: 0.92;
+
+  transform:
+    translateY(-50%)
+    translateY(-1px);
+
+  box-shadow:
+    0 3px 10px rgba(123, 84, 34, 0.22),
+    inset 0 1px 1px rgba(255, 247, 220, 0.65);
+}
+
+
+/* =====================================================
+   HAMBURGER
+   ===================================================== */
+
+.headerMenu {
+  position: absolute;
+
+  top: 50%;
+  right: 2vw;
+
+  transform:
+    translateY(-50%);
+
+  width: 38px;
+  height: 32px;
+
+  display: none;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.headerMenu span {
+  display: block;
+
+  width: 100%;
+  height: 1px;
+
+  background: #171717;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 1200px) {
+
+  .siteHeader {
+    padding: 0 40px;
+  }
+
+  .headerNav {
+    gap: 28px;
+  }
+
+  .headerJoin {
+    right: 40px;
+
+    padding: 0 19px;
+
+    font-size: 11px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  .siteHeader {
+    height: 76px;
+
+    padding:
+      0 22px;
+
+    background:
+      linear-gradient(
+        90deg,
+        #EBE4E2 0%,
+        #EBE4E2 48%,
+        rgba(235, 228, 226, 0.94) 68%,
+        rgba(235, 228, 226, 0.55) 84%,
+        rgba(235, 228, 226, 0) 100%
+      );
+  }
+
+
+  /* -----------------------------------------------
+     LOGO
+     ----------------------------------------------- */
+
+  .headerLogo {
+    width: 145px;
+
+    flex: 0 0 145px;
+  }
+
+
+  /* -----------------------------------------------
+     DESKTOP NAV
+     ----------------------------------------------- */
+
+  .headerNav {
+    position: absolute;
+
+    top: 76px;
+    left: 0;
+
+    transform: none;
+
+    width: 100%;
+    height: auto;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 28px;
+
+    padding:
+      28px 24px 32px;
+
+    box-sizing: border-box;
+
+    background: #EBE4E2;
+
+    box-shadow:
+      0 8px 20px rgba(65, 48, 38, 0.08);
+  }
+
+  .headerNavOpen {
+    display: flex;
+  }
+
+  .headerNavLink {
+    height: auto;
+  }
+
+
+  /* -----------------------------------------------
+     JOIN BUTTON
+     ----------------------------------------------- */
+
+  .headerJoin {
+    position: absolute;
+
+    top: 50%;
+    right: 66px;
+
+    transform: translateY(-50%);
+
+    width: auto;
+    max-width: calc(
+      100vw - 145px - 66px - 14px
+    );
+
+    height: 44px;
+
+    padding:
+      0 14px;
+
+    border-radius: 22px;
+
+    font-size: 10px;
+
+    letter-spacing: 0.035em;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+  }
+
+  .headerJoin:hover {
+    transform:
+      translateY(-50%)
+      translateY(-1px);
+  }
+
+
+  /* -----------------------------------------------
+     HAMBURGER
+     ----------------------------------------------- */
+
+  .headerMenu {
+    position: absolute;
+
+    top: 50%;
+    right: 22px;
+
+    width: 31px;
+    height: 27px;
+
+    display: flex;
+
+    transform:
+      translateY(-50%);
+
+    gap: 6px;
+
+    z-index: 2;
+  }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 390px) {
+
+  .siteHeader {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  /* -----------------------------------------------
+     LOGO
+     ----------------------------------------------- */
+
+  .headerLogo {
+    width: 130px;
+
+    flex-basis: 130px;
+  }
+
+
+  /* -----------------------------------------------
+     JOIN BUTTON
+     ----------------------------------------------- */
+
+  .headerJoin {
+    right: 58px;
+
+    max-width:
+      calc(
+        100vw - 130px - 58px - 12px
+      );
+
+    height: 40px;
+
+    padding:
+      0 11px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    letter-spacing: 0.025em;
+  }
+
+
+  /* -----------------------------------------------
+     HAMBURGER
+     ----------------------------------------------- */
+
+  .headerMenu {
+    right: 18px;
+
+    width: 28px;
+    height: 25px;
+
+    gap: 5px;
+  }
+}
+
+
+/* =====================================================
+   EXTRA SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 340px) {
+
+  .headerLogo {
+    width: 120px;
+
+    flex-basis: 120px;
+  }
+
+  .headerJoin {
+    right: 54px;
+
+    max-width:
+      calc(
+        100vw - 120px - 54px - 10px
+      );
+
+    height: 38px;
+
+    padding:
+      0 9px;
+
+    border-radius: 19px;
+
+    font-size: 8.5px;
+  }
+
+  .headerMenu {
+    right: 16px;
+
+    width: 26px;
+
+    gap: 5px;
+  }
+}
