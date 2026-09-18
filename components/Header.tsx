@@ -52,6 +52,15 @@ export default function Header() {
         </a>
 
         <a
+          href="/faq"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.headerNavLink}
+        >
+          FAQ
+        </a>
+
+        <a
           href="#contacts"
           className={styles.headerNavLink}
           onClick={() => setMenuOpen(false)}
