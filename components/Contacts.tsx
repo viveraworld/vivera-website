@@ -268,7 +268,7 @@ export default function Contacts() {
               {/* TELEGRAM */}
 
               <a
-                href="https://t.me/Gtime120_bot"
+                href="https://t.me/viverastart_bot"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="VÍVERA в Telegram"
