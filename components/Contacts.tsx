@@ -199,13 +199,13 @@ export default function Contacts() {
 
             <span id="vivera-consent">
               Я даю VÍVERA{" "}
-              <a
-                href="/consent-newsletter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                согласие
-              </a>{" "}
+<a
+  href="/documents/public%20documents/newsletter_consent.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  согласие
+</a>{" "}
               получать информационные и рекламные рассылки.
             </span>
           </label>
