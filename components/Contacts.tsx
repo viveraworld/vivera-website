@@ -334,9 +334,43 @@ export default function Contacts() {
               COPYRIGHT
               =================================================== */}
 
-          <div className={styles.copyright}>
-            © {new Date().getFullYear()} сайт создан командой VÍVERA
-          </div>
+          <div className={styles.footerDocuments}>
+  <a
+    href="/documents/public%20documents/oferta.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Цифровая оферта
+  </a>
+
+  <a
+    href="/documents/public%20documents/privacy_policy.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Политика конфиденциальности
+  </a>
+
+  <a
+    href="/documents/public%20documents/personal_data_consent.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Согласие на обработку персональных данных
+  </a>
+
+  <a
+    href="/documents/public%20documents/newsletter_consent.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Согласие на получение рассылки
+  </a>
+</div>
+
+<div className={styles.copyright}>
+  © {new Date().getFullYear()} сайт создан командой VÍVERA
+</div>
         </footer>
 
       </div>

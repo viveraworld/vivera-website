@@ -633,6 +633,43 @@
     scale(1.03);
 }
 
+/* =====================================================
+   DOCUMENTS
+   ===================================================== */
+
+.footerDocuments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+
+  margin-top: 26px;
+
+  font-family:
+    "Tilda Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 11px;
+  line-height: 1.4;
+
+  color: #77736c;
+}
+
+.footerDocuments a {
+  color: inherit;
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.footerDocuments a:hover {
+  color: #a67c42;
+  opacity: 0.8;
+}
 
 /* =========================================================
    COPYRIGHT
@@ -859,7 +896,15 @@
       40px;
   }
 
+  .footerDocuments {
+    margin-top: 22px;
 
+    gap: 8px 18px;
+
+    text-align: center;
+
+    font-size: 10px;
+  }
   /* =======================================================
      COPYRIGHT
      ======================================================= */
