@@ -52,10 +52,21 @@ export default function Header() {
         </a>
 
         <a
+          href="/about"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.headerNavLink}
+          onClick={() => setMenuOpen(false)}
+        >
+          О VÍVERA
+        </a>
+
+        <a
           href="/faq"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.headerNavLink}
+          onClick={() => setMenuOpen(false)}
         >
           FAQ
         </a>
